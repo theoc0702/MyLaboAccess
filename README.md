@@ -1,4 +1,4 @@
-Structure du code "main.dart" (dans le dossier lib)
+Structure du code "main.dart" (dans le dossier lib) <br>
 📌 1. void main() { runApp(const MyApp()); }
 
     C'est le point d'entrée de l'application Flutter.
