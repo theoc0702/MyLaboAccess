@@ -78,6 +78,42 @@ Cette fonction renvoie une icône adaptée à chaque type d’équipement :
 
 Cette application permet : ✅ D'afficher une liste d'équipements avec leurs quantités.
 ✅ D'expliquer comment emprunter et rendre du matériel via des boîtes de dialogue.
-✅ D'ouvrir deux nouvelles pages pour emprunter et rendre du matériel.
+✅ D'ouvrir deux nouvelles pages pour emprunter et rendre du matériel.<br>
 
-Tu veux ajouter des fonctionnalités comme la mise à jour des quantités après un emprunt ou un retour ? 🚀
+# Pour lancer l'application
+- Sur android studio aller dans le device manager (situé à droite de l'écran)
+s'il n'y est pas cliquer sur "Tools" (dans le menu déroulant en haut à gauche)
+- puis "create virtual device"
+- choisir un smartphone (pour cet exemple j'ai pris un google pixel 9)
+- Recommandé : API 30 (Android 11) ou supérieur
+Si aucune version n'est disponible, cliquer sur "Download"
+- demarrer le smartphone virtuel dans Device Manager, clique sur l'icône de lecture ▶ à côté du téléphone puis lancer le main.dart<br>
+
+## Problèmes fréquents et solutions
+
+❌ AVD Manager ne s’ouvre pas ?
+✔ Active Intel HAXM dans les paramètres du BIOS (VT-x)
+
+❌ L'émulateur est trop lent ?
+✔ Active "Use Host GPU" dans les options avancées de l'AVD
+
+❌ Erreur "No device found" ?
+✔ Vérifie avec la commande :
+
+```bash
+flutter doctor
+```
+
+✔ Installe les SDK Android manquants depuis Android Studio
+
+# Pour télécharger l'apk si vous avez un android
+
+- ouvrir le terminal et android studio
+- execute la commade
+```
+  flutter build apk --release
+```
+- Une fois le build terminé, le fichier APK se trouve dans :
+```
+/build/app/outputs/flutter-apk/app-release.apk
+```
